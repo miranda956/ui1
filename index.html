@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+</head>
+<body onload="getProducts()">
+    <div id="header">
+        <div class="qlinks">
+            <div class="row">
+                <div class="col"><a href="#">Contacts</a></div>
+                <div class="col align-right"><a href="#"></a></div>
+            </div>
+        </div>
+        <nav class="nav-sticky">
+            <div id="menu-toggle"><button><img src="assets/gg_menu-left-alt.svg" alt=""></button></div>
+            <img src="assets/logo_5f49856982f2f 1-1.png" class="header-logo">
+            <button class="header-cat"><img src="assets/carbon_categories.svg" alt=""> Categories</button>
+            <form autocomplete="off" id="search">
+                <div class="search-form">
+                    <input type="text" placeholder="Chercher">
+                    <button><img src="assets/bytesize_search.svg"></button>
+                </div>
+                <button class="input-after"><img src="assets/fluent_mic-on-48-regular.svg"></button>
+            </form>
+            <button class="poster"><img src="assets/akar-icons_circle-plus.svg"> Poster une annonce</button>
+            <div class="favoris"><img src="assets/bi_heart.png" alt="">Favoris</div>
+        </nav>
+    </div>
+  
+    <div id="mobile-banner"></div>
+    <div id="mobile-categories">
+        <div class="row gx-1">
+            <div class="col-4">
+                <div class="category c1">
+                    <a href="#">
+                        <img src="assets/Rectangle 13.png" class="category-img">
+                        <span class="title">Electronique et informatique</span>        
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="category c2">
+                    <a href="#">
+                        <img src="assets/Rectangle 13-1.png" class="category-img">
+                        <span class="title">Transport</span>        
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="category c3">
+                    <a href="#">
+                        <img src="assets/Rectangle 13-6.svg" class="category-img">
+                        <span class="title">immobiliers</span>        
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-1">
+            <div class="col-4">
+                <div class="category c7">
+                    <a href="#">
+                        <img src="assets/Rectangle 13-5.svg" class="category-img">
+                        <span class="title">Vêtements</span>        
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="category c8">
+                    <a href="#">
+                        <img src="assets/Rectangle 13-4.svg" class="category-img">
+                        <span class="title">Aliments</span>        
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="category c9">
+                    <a href="#">
+                        <img src="assets/Rectangle 13-3.svg" style="width: 80%" class="category-img">
+                        <span class="title">Électroménagers</span>        
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-1">
+            <div class="col-4">
+                <div class="category c4">
+                    <a href="#">
+                        <img src="assets/Rectangle 13-2.svg" class="category-img">
+                        <span class="title">Emplois</span>        
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="category c5">
+                    <a href="#">
+                        <img src="assets/Rectangle 13-1.svg" class="category-img">
+                        <span class="title">Services</span>        
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="category c6">
+                    <a href="#">
+                        <img src="assets/Rectangle 13.svg" class="category-img">
+                        <span class="title">Divers</span>        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="categories">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="row gx-3">
+                    <div class="col-md-4 col-4">
+                        <div class="category c1">
+                            <a href="#">
+                                <div class="row gx-2">
+                                    <div class="col"><img src="assets/Rectangle 13.png" class="category-img"></div>
+                                    <div class="col"><span class="title">Electronique et informatique</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-4">
+                        <div class="category c2">
+                            <a href="#">
+                                <div class="row gx-2">
+                                    <div class="col-md-6"><img src="assets/Rectangle 13-1.png" class="category-img"></div>
+                                    <div class="col-md-6"><span class="title">Transport</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-4">
+                        <div class="category c3">
+                            <a href="#">
+                                <div class="row gx-2">
+                                    <div class="col"><img src="assets/Rectangle 13-6.svg" class="category-img"></div>
+                                    <div class="col"><span class="title">immobiliers</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-3">
+                    <div class="col-md-4">
+                        <div class="category c7">
+                            <a href="#">
+                                <div class="row gx-2">
+                                    <div class="col"><img src="assets/Rectangle 13-5.svg" class="category-img"></div>
+                                    <div class="col"><span class="title">Vêtements</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="category c8">
+                            <a href="#">
+                                <div class="row gx-2">
+                                    <div class="col"><img src="assets/Rectangle 13-4.svg" class="category-img"></div>
+                                    <div class="col"><span class="title">Aliments</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="category c9">
+                            <a href="#">
+                                <div class="row gx-2">
+                                    <div class="col"><img src="assets/Rectangle 13-3.svg" style="width: 80%" class="category-img"></div>
+                                    <div class="col"><span class="title">Électroménagers</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-3">
+                    <div class="col-md-4">
+                        <div class="category c4">
+                            <a href="#">
+                                <div class="row gx-2">
+                                    <div class="col"><img src="assets/Rectangle 13-2.svg" class="category-img"></div>
+                                    <div class="col"><span class="title">Emplois</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="category c5">
+                            <a href="#">
+                                <div class="row gx-2">
+                                    <div class="col"><img src="assets/Rectangle 13-1.svg" class="category-img"></div>
+                                    <div class="col"><span class="title">Services</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="category c6">
+                            <a href="#">
+                                <div class="row gx-2">
+                                    <div class="col"><img src="assets/Rectangle 13.svg" class="category-img"></div>
+                                    <div class="col"><span class="title">Divers</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div id="banner">
+                    <img src="assets/Left Arrow.svg" class="left-arrow">
+                    <img src="assets/Right Arrow.svg" class="right-arrow">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main-content">
+        <div class="row gx-5">
+            <div class="col-md-3" id="side-banner">
+                <img src="assets/Rectangle 31.png" class="side-img">
+            </div>
+            <div class="col-md-9">
+                <h2 class="title">Top Annonces</h2>
+                <div id="top-products">
+                    <!-- API FETCH -->
+                </div>
+                <h2 class="title">Annonces Récentes</h2>
+                <div id="recent-products">
+                    <!-- API FETCH -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-spacer"></div>
+    <div id="mobile-footer">
+        <button class="active"><i class="fas fa-home"></i><span>Home</span></button>
+        <button><i class="fas fa-map-marker-alt"></i><span>Carte</span></button>
+        <button class="mitte"><i class="fas fa-plus"></i></button>
+        <button><i class="far fa-star"></i><span>Favoris</span></button>
+        <button><i class="far fa-user"></i><span>Profile</span></button>
+    </div>
+    <div id="footer">
+        <div class="row gx-5">
+            <div class="col-md-3">
+                <img src="assets/logo_5f49856982f2f 1-1.png" class="footer-logo">
+                <p>Le plus grand marché publique en ligne de Guinée</p>
+                <div class="social-icons">
+                    <div class="social-icon"><a href="#"><i class="fab fa-youtube"></i></a></div>
+                    <div class="social-icon"><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+                    <div class="social-icon"><a href="#"><i class="fab fa-twitter"></i></a></div>
+                    <div class="social-icon"><a href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="title">Contacts</div>
+                <div class="row gx-3 clist">
+                    <div class="col-md-2"><img src="assets/si-glyph_pin-location-2.png"></div>
+                    <div class="col-md-10">République de Guinée Conakry, Yattaya-Fossidet</div>
+                </div>
+                <div class="row gx-3 clist">
+                    <div class="col-md-2"><img src="assets/bx_bxs-phone-3.png"></div>
+                    <div class="col-md-10">+224 666 66 66 66</div>
+                </div>
+                <div class="row gx-3 clist">
+                    <div class="col-md-2"><img src="assets/jam_envelope-f.png"></div>
+                    <div class="col-md-10">support@makitiplus.com</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="title">Services</div>
+                <ul class="menu">
+                    <li><a href="#">Aide ed Support</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions Générales d’Utilisations</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <div class="title">Liens Rapides</div>
+                <ul class="menu">
+                    <li><a href="#">Se connecter</a></li>
+                    <li><a href="#">S’enregistrer</a></li>
+                    <li><a href="#">Mon Profile</a></li>
+                    <li><a href="#">Ma Boutique</a></li>
+                    <li><a href="#">Mes annonces</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <div class="title">L’Application Makiti+</div>
+                <a href="#"><img src="assets/Appstore-1.png" alt="" class="appstore"></a>
+                <a href="#"><img src="assets/Appstore.png" alt="" class="appstore"></a>
+            </div>
+        </div>
+        <hr class="separator">
+        <div class="row">
+            <div class="copyright">&copy; 2021 Makitiplus SAS. Tous droits réservés.</div>
+        </div>
+    </div>
+</body>
+</html>
